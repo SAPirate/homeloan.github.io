@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/adminRecords.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="/logout">Logout</a>
+          
+        </div>
+        <h2>Loan Applications</h2>
+            <table>
+                <tr style="text-transform: uppercase;">
+                    <th>id</th>
+                    <th>Full-Names</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>AnnualIncome</th>
+                    <th>LoanAmount</th>
+                    <th>LoanTerm(inyears)</th>
+                    <th>PropertyValue</th>
+                    <th>DownPayment</th>
+                    <th>ApprovalStatus</th>
+                </tr>
+    <% applications.forEach(application => { %>
+                <tr style="text-transform: capitalize;">
+                    <td><%= application.id %></td>
+                    <td><%= application.fullName %></td>
+                    <td><%= application.email %></td>
+                    <td><%= application.phone %></td>
+                    <td><%= application.income %></td>
+                    <td><%= application.loanAmount %></td>
+                    <td><%= application.loanTerm %></td>
+                    <td><%= application.propertyValue %></td>
+                    <td><%= application.downPayment %></td>
+                    <td><%= application.approvalStatus %></td>
+                </tr>
+    <% }) %>
+    </table>
+                    
+<footer>
+    <p>&copy; 2024 Your Company. All rights reserved.</p>
+</footer>
+</body>
+</html>

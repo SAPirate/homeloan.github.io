@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+    margin: 0% 0%; 
+}
+.nav{
+    padding: 1%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #333;
+    color: aliceblue;
+}
+.nav a{
+    font-size: 19px;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    /* color:#333; */
+    text-decoration: none;
+    text-align: left;
+    align-items: left;
+    padding: 10px;
+    width: 100%;
+    padding-top: 1%;
+    color: aliceblue;
+}
+h1{
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 1%;
+    font-weight: 300;
+}
+form {
+    background: white;
+    margin: 1% 5%;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   
+}
+h2{
+    text-align: center;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 1%;
+    font-weight: 300;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #5cb85c;
+    color: aliceblue;
+}
+.form-box{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px #5cb85c;
+}
+.left{
+    width: 50%;
+    padding: 5%;
+}
+.right{
+    width: 50%;
+    padding: 5%;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px; 
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}

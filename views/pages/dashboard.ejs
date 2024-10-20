@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+    <div class="nav">
+        <a href="/logout">Logout</a>
+        <a href="/adminRecords">ViewLoanStatus</a>
+    </div>
+    <h1>Welcome, <%= user.username %>!</h1>
+    <div class="procedure">
+        
+       <form action="/submit-loan" method="POST">
+            <h2>ready to see if u qualify to apply for a homeloan?</h2>
+            <div class="form-box">
+            <div class="left">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="income">Annual Income:</label>
+                <input type="number" id="income" name="income" required>
+            </div>
+            </div>
+            <div class="right">
+            
+            <div class="form-group">
+                <label for="loanAmount">Loan Amount:</label>
+                <input type="number" id="loanAmount" name="loanAmount" required>
+            </div>
+            <div class="form-group">
+                <label for="loanTerm">Loan Term (in years):</label>
+                <input type="number" id="loanTerm" name="loanTerm" required>
+            </div>
+            <div class="form-group">
+                <label for="propertyValue">Property Value:</label>
+                <input type="number" id="propertyValue" name="propertyValue" required>
+            </div>
+            <div class="form-group">
+                <label for="downPayment">Down Payment:</label>
+                <input type="number" id="downPayment" name="downPayment" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit Application</button>
+            </div>
+            </div>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+    </div>
+</body>
+</html>
